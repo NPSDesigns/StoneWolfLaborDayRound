@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+body { @apply bg-emerald-950 text-emerald-50 font-display; }
+
+.glass {
+  @apply bg-emerald-900/40 backdrop-blur-md border border-emerald-700/60 rounded-2xl shadow-glass;
+}
+
+.card-title { @apply text-sm uppercase tracking-wider opacity-80; }
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-xl px-3 py-2 bg-emerald-700 hover:bg-emerald-600 active:scale-95 transition;
+}
+
+.input {
+  @apply px-3 py-2 rounded-xl bg-emerald-950/60 border border-emerald-700 focus:outline-none;
+}
